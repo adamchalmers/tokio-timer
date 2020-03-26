@@ -16,6 +16,7 @@ pub struct Timer {
 }
 
 /// A `Future` that does nothing and completes after the requested duration
+/// Created by calling (`Timer::sleep`)[https://tokio-rs.github.io/tokio-timer/tokio_timer/struct.Timer.html#method.sleep]
 #[must_use = "futures do nothing unless polled"]
 #[derive(Debug)]
 pub struct Sleep {
